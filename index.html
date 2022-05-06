@@ -13,13 +13,61 @@
         rel="stylesheet">
 </head>
 <body>
+    <!-- start Setting Box -->
+    <div class="setting-box">
+        <div class="gear">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <div class="colors-list">
+            <h4>Main Colors</h4>
+            <ul class="colors">
+                <li data-color="#2196f3" class="active"></li>
+                <li data-color="#e91e63"></li>
+                <li data-color="#009688"></li>
+                <li data-color="#ff9800"></li>
+                <li data-color="#4caf50"></li>
+            </ul>
+        </div>
+        <div class="colors-back">
+            <h4>Landing Colors</h4>
+            <ul class="colors-back">
+                <li data-color="#10375a" class="active"></li>
+                <li data-color="#a51043"></li>
+                <li data-color="#0b5851"></li>
+                <li data-color="#cd7b01"></li>
+                <li data-color="#2b6e2e"></li>
+            </ul>
+        </div>
+        <div class="bundle-list">
+            <h4>Bundle Display</h4>
+            <div class="option-box">
+                <span class="yes" data-option="yes">Yes</span>
+                <span class="no active" data-option="no">No</span>
+            </div>
+        </div>
+    </div>
+    <!-- End Setting Box -->
+    <!-- start bundle -->
+    <ul class="bundle">
+        <li data-bundle="Education"> <a href="#education"></a></li>
+        <li data-bundle="Languages"><a href="#languages"></a></li>
+        <li data-bundle="About"><a href="#about"></a></li>
+        <li data-bundle="Skills"><a href="#skills"></a></li>
+        <li data-bundle="Projects"><a href="#works"></a></li>
+    </ul>
+    <!-- end bundle -->
     <!-- start header  -->
     <header>
         <div class="container">
-            <a href="#" class="logo">
+            <a href="#" class="logo" id="logo">
                 Bilal Mahmoud Obeid
             </a>
             <nav>
+                <span class="icons">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
                 <ul>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#languages">Languages</a></li>
@@ -27,7 +75,7 @@
                     <li><a href="#about">About</a></li>
                     
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#works">Works</a></li>
+                    <li><a href="#works">Projects</a></li>
                 </ul>
             </nav>
         </div>
@@ -199,7 +247,9 @@
             </div>
             <div class="about-content">
                 <div class="image">
-                    <img src="images/myphoto.jpg" alt="">
+                    <img src="images/myphoto-01.jpg" alt="">
+                    <i class="fa-solid fa-angle-right angle-image"></i>
+                    <i class="fa-solid fa-angle-left angle-image"></i>
                 </div>
                 <div class="info">
                     <h3>Bilal Mahmoud Obeid</h3>
@@ -231,23 +281,23 @@
                     <div class="box">
                         <h4>HTML</h4>
                         <div class="prog">
-                            <span style="width: 80%;" data-progress="80%"></span>
+                            <span style="width:0" data-width="80%"></span>
                         </div>
                     </div>
                     <div class="box">
                         <h4>Css</h4>
                         <div class="prog">
-                            <span style="width: 70%;" data-progress="70%"></span>
+                            <span style="width:0" data-width="75%"></span>
                         </div>
                     </div>
                     <div class="box">
                         <h4>JavaScript</h4>
                         <div class="prog">
-                            <span style="width: 30%;" data-progress="30%"></span>
+                            <span style="width:0" data-width="50%"></span>
                         </div>
                         <div class="note">
                             <i class="fa-solid fa-triangle-exclamation"></i>
-                            I'm Still learning JavaScript and FrameWorks <q>React js and BootStrap</q>
+                            I'm Still learning FrameWorks <q>React js and BootStrap</q>
                         </div>
                     </div>
                 </div>
@@ -259,7 +309,7 @@
     <div class="works" id="works">
         <div class="container">
             <div class="main-heading">
-                <h3>works</h3>
+                <h3>Projects</h3>
             </div>
             <div class="work-content">
                 <div class="work">
@@ -380,5 +430,9 @@
         </div>
     </footer>
     <!-- end footer -->
+    <!-- start Button top  -->
+    <a href="#logo" class="goUp"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- End Button top  -->
+    <script src="js/main.js"></script>
 </body>
 </html>
